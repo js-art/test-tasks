@@ -10,6 +10,7 @@ const HeaderWrapper = styled(Card)(
   align-items: center;
   height: ${theme.spacing(10)};
   margin-bottom: ${theme.spacing(10)};
+  background-color: ${theme.colors.primary.main};
 `
 );
 
@@ -38,9 +39,10 @@ function Header() {
 
             <Box>
               <Button
+                color="inherit"
                 component={Link}
                 href="/dashboards/tasks"
-                variant="contained"
+                variant="outlined"
                 sx={{ ml: 2 }}
               >
                 Live Preview
